@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanakya Junior college</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-close" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">PROGRAMS</a></li> -->
+                    <li><a href="#Programs">Programs<i class="fas fa-caret-down"></i></a>
+
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#Events">Events<i class="fas fa-caret-right"></i></a>
+
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Events">Sports</a></li>
+                                            <li><a href="#Events">Cultural</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#Faculty">Faculty<i class="fas fa-caret-right"></i></a>
+
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Faculty">Science</a></li>
+                                            <li><a href="#faculty">Commerce</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#Student">Students<i class="fas fa-caret-down"></i></a>
+
+                        <div class="dropdown-menu">
+                            <ul>
+                                <!-- <li><a href="#">Portfolio</a></li> -->
+                                <li>
+                                    <a href="#Schedule">Schedules<i class="fas fa-caret-right"></i></a>
+
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Scedule">Holidays</a></li>
+                                            <li><a href="#Scedule">Examinations</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#Stats">Stats</a>
+                                    <!-- <div class="dropdown-menu-1">
+                                    <ul>
+                                      <li><a href="#">Refund</a></li>
+                                      <li><a href="#">Fee</a></li>
+                                      <li><a href="#">Stats</a></li>  
+                                    </ul>
+                                  </div> -->
+                                </li>
+                                <li><a href="#New Letter">New Letter</a></li>
+                                <li><a href="#Webinars">Webinars</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li><a href="#Facilities">Facilities<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#Hostel">Hostel<i class="fas fa-caret-right"></i></a>
+
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Hostel">Boys Hostel</a></li>
+                                            <li><a href="#Hostel">Girls hostel</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#Mess">Mess</a></li>
+                                <li><a href="#library">library</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#Admission">Addmission<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#Admission">Science<i class="fas fa-caret-right"></i></a>
+
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Admission">11th Science</a></li>
+                                            <li><a href="#Admission">12th Science</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#Admission">Commerce<i class="fas fa-caret-right"></i></a>
+                                    <div class="dropdown-menu-1">
+                                        <ul>
+                                            <li><a href="#Admission">11th Commerce</a></li>
+                                            <li><a href="#Admission">12th Commerce</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- <li><a href="#">library</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#NDA">NDA<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#NDA">NDA Coaching</a>
+                                </li>
+                                <li><a href="#NDA">NDA Training</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/recruitment.html">Recruitment</a></li>
+
+                    <!-- <li><a href="">STUDENT</a></li>
+                    <li><a href="">FACILITIES</a></li>
+                    <li><a href="">ADMISSION</a></li>
+                    <li><a href="">RECRUITMENT</a></li> -->
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+            <button id="btn101"><i class="fa-solid fa-contact-book"></i> <a href="#contact">Contact</a> </button>
+
+        </nav>
+
+        <div class="heading">
+            <h3>Shree Vidyadham Education Society Pune</h3>
+            <h1>Chanakya Junior college</h1>
+            <h4>Creating Tommorrow's Leaders</h4>
+            <a href="" class="btn">Admission Open for 2023-2024</a>
+        </div>
+
+    </section>
+
+
+    <!-- ------------------Toppers------------ -->
+
+    <section class="toppers">
+        <h1>Topper of 2022-2023 Batch</h1>
+        <p>Toppers of 2022-2023 Batch in 12th science and 12th Commerce</p>
+
+        <div class="row">
+            <div class="topper-col">
+                <img src="images/user2.jpg" 300*300 alt="">
+                <h3 class="name"> Malcolm David</h3>
+                <h4>Class : 12th Science</h4>
+                <h3>Rank : 1st</h3>
+                <h4>Percentage : 96.88%</h4>
+
+
+            </div>
+            <div class="topper-col">
+                <img src="images/user2.jpg" alt="">
+                <h3 class="name"> Malcolm David</h3>
+                <h4>Class : 12th Science</h4>
+                <h3>Rank : 1st</h3>
+                <h4>Percentage : 96.88%</h4>
+
+
+            </div>
+
+            <div class="topper-col">
+                <img src="images/user2.jpg" alt="">
+                <h3 class="name"> Malcolm David</h3>
+                <h4>Class : 12th Science</h4>
+                <h3>Rank : 1st</h3>
+                <h4>Percentage : 96.88%</h4>
+
+
+            </div>
+
+            <!-- <div class="topper-col">
+                <img src="images/user2.jpg" alt="">
+                <h3 class="name"> Malcolm David</h3>
+                <h4>Class : 12th Science</h4>
+                <h3>Rank : 1st</h3>
+                <h4>Percentage : 96.88%</h4>
+
+
+            </div> -->
+        </div>
+    </section>
+
+    <!-- ----------------our vision our mission-------------- -->
+
+    <section class="about-us">
+        <h1>About-Us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, alias!</p>
+        <div class="image1">
+            <img src="images/pxfuel.jpg" alt="">
+            <div class="layer">
+                <h3>NDA Training</h3>
+            </div>
+        </div>
+        <div class="image1 ">
+            <h2>Our Vission</h2>
+            <div class="justify">
+                <p ">To emerge as a pre-eminent educational group that aims to work for the holistic enhancement of society by
+                enabling the young and bright minds of the country to help them realize their dreams of becoming doctors
+                and engineers thereby pushing India into the comity of a developed nation. To build an institution that
+                is resilient, flexible and productive so as to provide sustainable growth and
+                self-fulfillment. To Endeavor to work towards the proportion of world-class Education with an emphasis
+                on values in life as our core concern. To work with the mission with confidence and zeal and be
+                responsive to the social environment for achieving high ethical standards by giving as much importance
+                to means as to ends To be respected and sought after educational institutions engaged in equipping
+                individuals capable of building learning organizing. Directed by effective internal governance and a
+                nationally distinguished board of trustees.
+            </p>
+        </div>
+        </div>
+        <div class=" image1">
+                <h2>Our Mission</h2>
+                <div class="justify">
+                    <p>To create an excellent competitive environment in the student community by virtue of imparting
+                        qualitative education with a consolidated strategy and scientific approach to produce proficient
+                        professionals. We have led an educational movement, which is dedicated to the modest cause of
+                        helping students across the country to make them succeed in their professional careers like
+                        Medicine & Engineering that offer infinite dignity in personal and professional life
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- --------------------footer---------------- -->
+
+    <!-- <section class="footer" id="contact">
+        <h2>Contact Us</h2>
+        <p class="cno">7249505152/7735505153</p>
+        <p class="email">svespune@gmail.com</p>
+        <div class="icons">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+       </div>
+       <div class="footer-links">
+        <ul>
+            <li><a href="">Admission</a></li>
+            <li><a href="">Program</a></li>
+            <li><a href="">Student</a></li>
+            <li><a href="">Fee structure</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+       </div>
+       <p id="copyright">copyrights &copy; Shree Vidyadham Education Society All Right Reserved.</p>
+    </section> -->
+
+
+
+    <!-- -------------footer2----------- -->
+<footer>
+    <section class="footer">
+        <div class="info">
+            <p>Info</p>
+            <ul>
+                <li> <a href=""> Blogs</a></li>
+                <li> <a href=""> Admission</a></li>
+                <li> <a href=""> Gallery</a></li>
+                <li> <a href=""> Fee structure</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <p>Support</p>
+            <ul>
+                <li> <a href=""> Support</a></li>
+                <li> <a href=""> Privacy</a></li>
+                <li> <a href=""> terms and conditions</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <p>Contact Us</p>
+            <ul>
+                <li><a href="">7249505152/7735505153</a></li>
+                <li><a href="">svespune@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+       </div>
+
+       
+    </section>
+    <p id="copyright">copyrights &copy; Shree Vidyadham Education Society All Right Reserved.</p>
+</footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+</body>
+
+</html>
